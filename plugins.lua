@@ -14,7 +14,8 @@ return require('packer').startup(function(use)
 
   use {
       'EdenEast/nightfox.nvim', 
-    config = get_setup("nightfox") }
+    "config = get_setup("nightfox") 
+    }
 
   -- A File Explorer For Neovim Written In Lua
   use {
@@ -22,14 +23,14 @@ return require('packer').startup(function(use)
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional
     },
-    config = get_setup("tree")
+    "config = get_setup("tree")
   }
 
   -- A blazing fast and easy to configure Neovim statusline written in Lua.
   use {
     'nvim-lualine/lualine.nvim',
     requires = { 'nvim-tree/nvim-web-devicons', opt = true },
-    config = get_setup("lualine")
+    "config = get_setup("lualine")
 
   }
 
@@ -37,7 +38,7 @@ return require('packer').startup(function(use)
     'akinsho/bufferline.nvim',
     tag = "*", 
     requires = 'nvim-tree/nvim-web-devicons',
-    config = get_setup("bufferline")
+    "config = get_setup("bufferline")
   }
 
   use {
@@ -50,7 +51,7 @@ return require('packer').startup(function(use)
 
   use {
    'numToStr/Comment.nvim',
-    config = get_setup("comment")
+    "config = get_setup("comment")
   }
 
   use {
@@ -59,19 +60,19 @@ return require('packer').startup(function(use)
       "jose-elias-alvarez/null-ls.nvim",
       'neovim/nvim-lspconfig',
     },
-    config = get_setup("eslint")
+    "config = get_setup("eslint")
   }
 
   use {
       'neovim/nvim-lspconfig',
-    config = get_setup("lsp")
+    "config = get_setup("lsp")
   }
 
   -- 자동으로 플러그인 찾아줌
   use {
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
-    config = get_setup("mason")
+    "config = get_setup("mason")
   }
 
   use {
@@ -87,11 +88,11 @@ return require('packer').startup(function(use)
   use {
     "jose-elias-alvarez/null-ls.nvim",
     "nvim-lua/plenary.nvim",
-    config = get_setup("null-ls")
+    "config = get_setup("null-ls")
   }
 
   use {
 	"windwp/nvim-autopairs",
-    config = get_setup("nvim-autopairs")
+    "config = get_setup("nvim-autopairs")
   }
 end)
